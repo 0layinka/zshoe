@@ -1,0 +1,600 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <!-- remix icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!-- custom css -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!------------------- navbar ---------------------->
+<nav class=" fixed w-full z-50  top-0 start-0 border-b transparent" id="navScroll">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="./img/Zshoe__2_-removebg-preview.png" class="h-10" alt="Zshoe Logo" />
+        <span class="self-center text-xl font-lato whitespace-nowrap dark:text-white">zShoe</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="py-2 px-4   focus:outline-none text-secondaryColor rounded-lg border hover:bg-slate-600 me-2 md:me-0">Get Started</button>
+        <button><i class="ri-menu-4-line text-xl md:hidden" id="nav_show"></i></button>
+    </div>
+    <div class="items-center  hidden relative justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-2 font-medium md:border-0 border md:flex-row">
+        <li>
+          <a href="#" class="block py-2 px-3 font-mont hover:text-red-900 ease-in-out duration-300 text-red-400 uppercase">Home</a>
+        </li>
+        <li id="categories_hover">
+          <a href="./categories.html" class="block py-2 px-3 md:hover:text-white md:hover:bg-transparent ease-in-out duration-300 hover:bg-white hover:text-primaryColor category_hover uppercase">SHOP <i class="ri-arrow-drop-down-line"></i></a>
+          <div class="hidden" id="show">
+            <div class="bg-primaryColor absolute p-2 items-center flex">
+              <a href="./categories.html#men" class="mx-2 hover:text-red-400 duration-300">MEN</a>|<a href="./categories.html#women" class="mx-2 hover:text-red-400 duration-300">WOMEN</a>|<a href="./categories.html#kids" class="mx-2 hover:text-red-400 duration-300">KIDS</a>
+            </div>
+        </li>
+        <li>
+          <a href="Blog.html" class="block py-2 px-3 md:hover:text-white md:hover:bg-transparent ease-in-out duration-300 hover:bg-white hover:text-primaryColor uppercase">Blog</a>
+        </li>
+        <li>
+          <a href="contact.html" class="block py-2 px-3 md:hover:text-white md:hover:bg-transparent ease-in-out duration-300 hover:bg-white hover:text-primaryColor uppercase">Contact</a>
+        </li>
+        <i class="md:hidden ri-close-fill absolute top-3 right-2 text-xl py-2 px-3" id="nav_close"></i>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <!---------------------------------------------------landing page------------------------------------------------>
+  <header class="bg-[url('./img/image.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center h-screen justify-center text-center ">
+    <h1 class=" font-mont md:text-6xl text-3xl md:w-[100%]">DESIGNED FOR YOUR WALK TO FREEDOM</h1><br>
+    <p class="button_style mx-auto w-fit bg-transparent border-2 rounded cursor-pointer animate-jump"><i class="ri-shopping-cart-line"></i><a href="#buy_now"> BUY NOW</a></p>
+  </header>
+  <!---------------------------------------------------main------------------------------------------------>
+  <main class="bg-[url('./img/justify.png')] bg-fixed bg-cover bg-center bg-no-repeat">
+    <!-- best seller section -->
+    <section class="md:w-[90%]  mx-auto" id="buy_now">
+      <section class="h-fit w-[100%]">
+        <div>
+          <div class="w-[100%]">
+            <div class="flex justify-center mx-auto md:h-10 py-10  md:w-[100%] items-center"><hr class="hidden lg:block md:w-[30%]"><p class="text-center mx-2 my-2 text-xl tracking-wide"><b id="button1" class="cursor-pointer">BESTSELLERS</b> / <b id="button2" class="cursor-pointer">NEW ARRIVAL</b> / <b id="button3" class="cursor-pointer">TRENDING</b></p><hr class="hidden lg:block md:w-[30%]"></div>
+            <!-- big_container -->
+            <div id="Best_seller">
+              <!-- first_container -->
+              <div class="lg:flex">
+                <div class="grid grid-cols-6">
+                  <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture1.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden " id="show_1">
+                        <div class="flex justify-between">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <!-- second_container -->
+                  <div class="md:col-span-3 my-4 h-[390px] relative overflow-hidden col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture2.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sporty boots</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$97.00</b></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- third_container -->
+                <div class="grid grid-cols-6">
+                  <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture3.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-15%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">yoga softy set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$40.00</b> <s class="text-red-400">$150.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <!-- fourth_container -->
+                  <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture4.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-10%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sporty set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$86.00</b></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <br><br><br>
+            </div>
+            <!-- new arrival_2 -->
+            <div id="new_arrival" class="hidden">
+              <div class="lg:flex" id="first_container">
+                <!-- first_container -->
+                <div class="grid grid-cols-6">
+                  <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture5.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden " id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <!-- second_container -->
+                  <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture7.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <div class="grid grid-cols-6">
+                <!-- third_container -->
+                <div class="md:col-span-3 h-[390px] my-4 relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                  <div> 
+                    <div class="relative rounded h-fit w-fit">
+                      <img src="./img/picture8.jpg" class="h-52" alt="">
+                      <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                    </div>
+                  </div>
+                  <div class="mt-3"><hr><br>
+                    <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                    <b class="text-gray-300">Shoes</b><br>
+                    <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                      <div class="flex justify-between absolute w-[90%]">
+                        <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                          <i class="ri-shopping-cart-line"></i>
+                          <b class="uppercase">Add To Cart</b>
+                        </span>
+                        <span>
+                          <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- fourth_container -->
+                <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                  <div> 
+                    <div class="relative rounded h-fit w-fit">
+                      <img src="./img/picture9.jpg" class="h-52" alt="">
+                      <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                    </div>
+                  </div>
+                  <div class="mt-3"><hr><br>
+                    <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                    <b class="text-gray-300">Shoes</b><br>
+                    <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                      <div class="flex justify-between absolute w-[90%]">
+                        <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                          <i class="ri-shopping-cart-line"></i>
+                          <b class="uppercase">Add To Cart</b>
+                        </span>
+                        <span>
+                          <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                </div>
+              </div>
+              <!-- end -->
+              <br><br><br>
+            </div>
+            <!-- TRENDING -->
+            <div id="trending" class=" hidden">
+              <div class="lg:flex" id="first_container">
+                <!-- first_container -->
+                <div class="grid grid-cols-6">
+                  <div class="md:col-span-3 my-4 relative h-[390px] col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture10.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden " id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <!-- second_container -->
+                  <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                    <div> 
+                      <div class="relative rounded h-fit w-fit">
+                        <img src="./img/picture11.jpg" class="h-52" alt="">
+                        <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                      </div>
+                    </div>
+                    <div class="mt-3"><hr><br>
+                      <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                      <b class="text-gray-300">Shoes</b><br>
+                      <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                        <div class="flex justify-between absolute w-[90%]">
+                          <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                            <i class="ri-shopping-cart-line"></i>
+                            <b class="uppercase">Add To Cart</b>
+                          </span>
+                          <span>
+                            <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                            <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
+                <div class="grid grid-cols-6">
+                <!-- third_container -->
+                <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                  <div> 
+                    <div class="relative rounded h-fit w-fit">
+                      <img src="./img/picture12.jpg" class="h-52" alt="">
+                      <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                    </div>
+                  </div>
+                  <div class="mt-3"><hr><br>
+                    <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                    <b class="text-gray-300">Shoes</b><br>
+                    <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                      <div class="flex justify-between absolute w-[90%]">
+                        <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                          <i class="ri-shopping-cart-line"></i>
+                          <b class="uppercase">Add To Cart</b>
+                        </span>
+                        <span>
+                          <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- fourth_container -->
+                <div class="md:col-span-3 my-4 h-[390px] relative  col-span-12 rounded hover:border-2 p-2 mx-auto ease-in-out duration-75" id="hover_1">
+                  <div> 
+                    <div class="relative rounded h-fit w-fit">
+                      <img src="./img/picture13.jpg" class="h-52" alt="">
+                      <span class="px-2 py-1 rounded absolute top-2 right-2 bg-slate-500">-20%</span>
+                    </div>
+                  </div>
+                  <div class="mt-3"><hr><br>
+                    <b class="uppercase hover:text-red-200 cursor-pointer">sprite yoga softy set</b><br>
+                    <b class="text-gray-300">Shoes</b><br>
+                    <p class=" font-mont"><b>$67.00</b> <s class="text-red-400">$100.00</s></p><br><div class="h-fit py-2 md:hidden" id="show_1">
+                      <div class="flex justify-between absolute w-[90%]">
+                        <span class="hover:text-red-400 ease-in-out duration-100 cursor-pointer">
+                          <i class="ri-shopping-cart-line"></i>
+                          <b class="uppercase">Add To Cart</b>
+                        </span>
+                        <span>
+                          <i class="ri-equalizer-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-heart-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                          <i class="ri-share-box-line hover:text-red-400 mx-1 cursor-pointer"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                </div>
+              </div>
+              <!-- end -->
+              <br><br><br>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="w-[100%] pb-10 md:px-10">
+      <div class="p-4 bg-[url('./img/background.webp')] mx-auto md:bg-cover items-center md:bg-center bg-no-repeat flex  md:h-[300px] h-[400px] w-[100%] md:w-[80%] ">
+          <h1 class="text-black text-3xl"><b>NEW ARRIVALS 2018</b> <br><br> THE LEBRON SOLDIER XI <br> SFG BASKETBALL SHOE <br><br><p class="text-black text-sm">Look real. define yourself. add intensity Be quick to receive the best deals <br> of the store.Mostviewed Products</p></h1>
+      </div>
+    </section>
+    <!-- promo section -->
+    <section class="h-[90vh] bg-[url('./img/background2.jpg')] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center text-center">
+    <p class="text-xl">THE SEASON BEGINGS</p><br><br>
+    <h1 class="text-2xl md:text-6xl">PROMOTION <span class="text-red-400">SALE OFF 50%</span></h1><br>
+    <p class="button_style mx-auto w-fit bg-transparent border-2 rounded cursor-pointer animate-jump"><i class="ri-shopping-cart-line"></i><a href="#buy_now"> BUY NOW</a></p><br><br><br><br><br>
+    <p class="text-2xl md:text-4xl">BEFORE OFFER ENDS</p><br><br>
+    <p>Expired</p>
+    </section><br><br>
+    <!-- Categories section -->
+    <section class="p-2 md:w-[80%] cursor-pointer lg:h-[90vh] mx-auto">
+      <div class="text-center flex flex-col">
+        <span class="text-center text-2xl mt-[10vh] ">SALES</span>
+        <div class="flex justify-center"><span class="border-t-2 border-t-red-400 w-[70px]  bg-slate-600"></span></div>
+      </div>
+      <br><br><br><br>
+      <div class="grid grid-cols-12 gap-4 my-auto">
+        <div class="col-span-full lg:col-span-6 bg-slate">
+          <div class="grid grid-cols-12 gap-3">
+            <div class="col-span-6 bg-[url('./img/categories3.webp')] bg-no-repeat bg-center bg-cover h-[300px] p-3">
+              <p class="font-mont font-bold text-xl">CHUKKAS</p>
+              <div class="border-t-2 w-[95px]"></div>
+            </div>
+            <div class="col-span-6 bg-[url('./img/categories2.webp')] bg-no-repeat bg-center bg-cover h-[300px] p-3">
+              <p class="font-mont font-bold text-xl">WORK BOOTS</p>
+              <div class="border-t-2 w-[95px]"></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 gap-3 mt-3">
+            <div class="col-span-6 bg-[url('./img/categories.webp')] bg-no-repeat bg-center bg-cover h-[300px] p-3">
+              <p class="font-mont font-bold text-xl">HIKING BOOTS</p>
+              <div class="border-t-2 w-[95px]"></div>
+            </div>
+            <div class="col-span-6 bg-[url('./img/categories1.webp')] bg-no-repeat bg-center bg-cover h-[300px] p-3">
+              <p class="font-mont font-bold text-xl">GYM SNEAKERS</p>
+              <div class="border-t-2 w-[95px]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-6 p-2 bg-slate-500 bg-[url('./img/bigcategory.jpg')] bg-no-repeat bg-cover bg-op bg-center">
+          <div class="mt-[85%]">
+            <p class="text-3xl">zSHOE STORES</p>
+            <div class="border-t-2 w-[95px] my-[2%]"></div>
+            <p class="text-xl">Make This Season Yours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <section class="container">
+      <div class="w-[90%] gap-2  ms-auto grid md:grid-cols-12">
+        <div class="col-span-6 grid grid-cols-6 p-2 ">
+          <div class="col-span-3 p-2 ">
+            <i class="ri-plane-line text-2xl p-2 cursor-pointer hover:text-red-500"><small class="font-mont"> Free<br>Delivery</small></i>
+          </div>
+          <div class="col-span-3 ">
+            <div class="col-span-3 p-2 ">
+              <i class="ri-discount-percent-fill text-2xl p-2 cursor-pointer hover:text-red-500"><small class="font-mont"> Client<br> Discount</small></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-6 grid grid-cols-6 p-2">
+          <div class="col-span-3 p-2">
+            <i class="ri-refund-2-fill text-2xl p-2 cursor-pointer hover:text-red-500 duration-150"><small class="font-mont"> Return<br> Of Goods</small></i>
+          </div>
+          <div class="col-span-3 ">
+            <div class="col-span-3 p-2">
+              <i class="ri-global-fill text-2xl ms-auto p-2 cursor-pointer hover:text-red-500 duration-150"><small class="font-mont"> Many<br> Brands</small></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br><br>
+  </main>
+  <!-- footer -->
+  <footer class=" bg-primaryColor p-2">
+    <!-- links -->
+    <div class="md:w-[70%]  mx-auto items-center grid grid-cols-6 justify-between">
+      <div class="col-span-full md:col-span-1">
+        <img src="./img/Zshoe__2_-removebg-preview.png" class="h-28 mx-auto my-2 " alt="">
+      </div>
+      <div class="hidden md:col-span-3 lg:col-span-4 md:block">
+
+      </div>
+      <div class="col-span-full md:col-span-2 lg:col-span-1 md:ms-auto text-2xl text-center">
+        <i class="ri-twitter-x-line mx-1 hover:text-red-400 duration-200"></i>
+        <i class="ri-facebook-fill mx-1 hover:text-red-400 duration-200"></i>
+        <i class="ri-google-fill mx-1 hover:text-red-400 duration-200"></i>
+        <i class="ri-github-fill mx-1 hover:text-red-400 duration-200"></i>
+      </div>
+    </div><br>
+    <hr class="text-2xl">
+    <div>
+      <div class="w-[80%] mx-auto m-4 grid grid-cols-12 gap-3">
+        <div class="col-span-full md:col-span-3">
+          <p class="uppercase font-bold text-red-400">contact us</p><br>
+          <p><i class="ri-home-4-fill text-xl mx-1"></i>
+            NO 3, ADEYINKA STREET, OYERO, IFO, OGUN STATE, NIGERIA.
+          </p><br>
+          <p>
+            <i class="ri-phone-fill"></i> +234-90-272-202-88
+          </p><br>
+          <p class="hover:text-red-400 duration-200 cursor-pointer">
+            <i class="ri-mail-fill"></i> Olayinkaadeyinka25@gmail.com
+          </p>
+
+        </div>
+        <div class="col-span-full md:col-span-3">
+          <p class="uppercase font-bold text-red-400">info</p><br>
+
+          
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Search Terms
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Advance Search
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Orders Returns
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Consultant
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Helps & FAQs
+          </p>
+        </div>
+        <div class="col-span-full md:col-span-3">
+          <p class="uppercase font-bold text-red-400">help</p>
+          <br>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> About
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Contact
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Privacy Policy
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Best Sellers
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Support
+          </p>
+        </div>
+        <div class="col-span-full md:col-span-3">
+          <p class="uppercase font-bold text-red-400">support</p><br>
+
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Search Terms
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Advance Search
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Orders Returns
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Consultant
+          </p>
+          <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+            <i class="ri-arrow-right-s-line"></i> Helps & FAQs
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="p-6 text-center bg-red-800">
+    <p class="text-xl font-mont">&copy; zShoe Stores</p>
+  </div>
+  
+
+</body>
+<script src="./scripts.js"></script>
+</html>

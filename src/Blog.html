@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="bg-[url('./img/justify.png')] bg-no-repeat bg-cover bg-center bg-fixed">
+    <nav class=" fixed w-full z-50  top-0 start-0 border-b transparent bg-light">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./img/Zshoe__2_-removebg-preview.png" class="h-10" alt="Zshoe Logo" />
+                <span class="self-center text-xl font-lato whitespace-nowrap dark:text-white">zShoe</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="py-2 px-4   focus:outline-none text-secondaryColor rounded-lg border hover:bg-slate-600 me-2 md:me-0">Get Started</button>
+                <button><i class="ri-menu-4-line text-xl md:hidden" id="nav_show"></i></button>
+            </div>
+            <div class="items-center  hidden relative justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-2 font-medium md:border-0 border md:flex-row">
+                    <li>
+                        <a href="./index.html" class="block py-2 px-3 md:hover:text-white md:hover:bg-transparent ease-in-out duration-300 hover:bg-white hover:text-primaryColor uppercase">Home</a>
+                    </li>
+                    <li id="categories_hover">
+                    <a href="./categories.html" class="block py-2 px-3 md:hover:text-white md:hover:bg-transparent ease-in-out duration-300 hover:bg-white hover:text-primaryColor category_hover uppercase">SHOP <i class="ri-arrow-drop-down-line"></i></a>
+                        <div class="hidden" id="show">
+                            <div class="bg-primaryColor absolute p-2 items-center flex">
+                            <a href="./categories.html#men" class="mx-2 hover:text-red-400 duration-300">MEN</a>|<a href="./categories.html#women" class="mx-2 hover:text-red-400 duration-300">WOMEN</a>|<a href="./categories.html#kids" class="mx-2 hover:text-red-400 duration-300">KIDS</a>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    <li>
+                    <a href="./Blog.html" class="block py-2 px-3 font-mont hover:text-red-900 ease-in-out duration-300 text-red-400 uppercase">Blog</a>
+                    </li>
+                    <li>
+                    <a href="contact.html" class="block py-2 px-3 md:hover:text-white md:hover:bg-transparent ease-in-out duration-300 hover:bg-white hover:text-primaryColor uppercase">Contact</a>
+                    </li>
+                    <i class="md:hidden ri-close-fill absolute top-3 right-2 text-xl py-2 px-3" id="nav_close"></i>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-[20vh] flex justify-center">
+        <b class="font-mont text-6xl w-[35%] text-center mx-auto shadow-2xl bg-black bg-opacity-20 rounded-lg px-2 p-2 text-red-400">ABOUT ZSHOE</b>
+    </header>
+
+    <main class="mt-[12vh]">
+        <div class="grid grid-cols-12 w-[80%] mx-auto mt-5 gap-3">
+            <div class="col-span-full lg:col-span-6"><img src="./aboutImage/about2.webp" alt=""></div>
+            <div class="col-span-full lg:col-span-6 p-3 flex flex-col justify-center shadow-2xl">
+                <div>
+                    <p class="text-2xl font-mont font-semibold text-center text-red-400">WHO WE ARE ?</p><br>
+                    <div class="flex items-center"><hr class="w-[10%]"><b class="mx-1">THE HIGH STRESS FAVOUTIRE</b></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellendus magni, adipisci quidem ducimus debitis neque. Corrupti suscipit, ratione, ducimus possimus ipsa, sapiente officiis praesentium iure minima necessitatibus perferendis corporis.</p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae neque voluptate quam ipsam inventore atque labore. Repellat voluptatem architecto praesentium, magnam alias, sint saepe ratione tempore veritatis, dolore sapiente amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-12 w-[80%] mx-auto mt-5 gap-3">
+            <div class="col-span-full lg:col-span-6 p-3 flex flex-col justify-center shadow-2xl">
+                <div>
+                    <p class="text-2xl font-mont font-semibold text-center text-red-400">WHO WE ARE ?</p><br>
+                    <div class="flex items-center"><hr class="w-[10%]"><b class="mx-1">THE HIGH STRESS FAVOUTIRE</b></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellendus magni, adipisci quidem ducimus debitis neque. Corrupti suscipit, ratione, ducimus possimus ipsa, sapiente officiis praesentium iure minima necessitatibus perferendis corporis.</p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae neque voluptate quam ipsam inventore atque labore. Repellat voluptatem architecto praesentium, magnam alias, sint saepe ratione tempore veritatis, dolore sapiente amet.</p>
+                </div>
+            </div>
+            <div class="col-span-full lg:col-span-6"><img src="./aboutImage/about1.webp" alt=""></div>
+        </div>
+        <!-- the attribute section -->
+        <section class="w-[100%] bg-[url('./aboutImage/about3.webp')] flex justify-center items-center bg-no-repeat bg-cover bg-center h-[50vh] mt-12">
+            <div class="grid grid-cols-12 gap-3 w-[80%]">
+                <div class="col-span-full md:col-span-4 p-5  flex flex-col items-center">
+                    <i class="ri-secure-payment-fill cursor-pointer text-6xl"></i>
+                    <b class="text-xl">SECURE PAYMENT</b>
+                </div>
+                <div class="col-span-full md:col-span-4 p-5  flex flex-col items-center">
+                    <i class="ri-speed-up-fill cursor-pointer text-6xl"></i>
+                    <b class="text-xl">FAST DELIVERY</b>
+                </div>
+                <div class="col-span-full md:col-span-4 p-5  flex flex-col items-center">
+                    <i class="ri-discount-percent-fill cursor-pointer text-6xl"></i>
+                    <b class="text-xl">SEASONAL DISCOUNTS</b>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <!-- staff section -->
+        <section>
+            <h1 class="uppercase text-3xl text-center">Behind The Brands</h1>
+            <div class="border-t-4 border-red-400 w-[35%] mx-auto mt-2">
+            </div>
+            <p class=" mx-auto text-center mt-5">We are a female-founded, 100% woman-led team of collaborative dreamers who value innovation, curiosity and free-thinking fearlessness in everything that we do. <br> We take immeasurable pride in our work, intentionally stitching love into the very fiber and fabric of our designs. We are small, but we are a mighty <br> group of talented individuals dedicated to bringing you otherworldly designs with imagery to match.</p><br><br>
+
+            <div class="w-[90%] p-3  mx-auto grid grid-cols-12 gap-3">
+                <div class="col-span-full md:col-span-4 ">
+                    <div>
+                        <img src="./aboutImage/staff2.webp" class="rounded-md" alt="">
+                    </div>
+                    <br>
+                    <p class="font-mont text-3xl text-center">AYOMI</p>
+                    <p class="text-xl font-semibold text-center my-2 text-red-400">MANAGER</p>
+                </div>
+                <div class="col-span-full md:col-span-4 ">
+                    <div>
+                        <img src="./aboutImage/staff1.webp" class="rounded-md" alt="">
+                    </div>
+                    <br>
+                    <p class="font-mont text-3xl text-center">Deborah</p>
+                    <p class="text-xl font-semibold text-center my-2 text-red-400">C.E.O</p>
+                </div>
+                <div class="col-span-full md:col-span-4 ">
+                    <div>
+                        <img src="./aboutImage/staff3.webp" class="rounded-md" alt="">
+                    </div>
+                    <br>
+                    <p class="font-mont text-3xl text-center">OLADAPO</p>
+                    <p class="text-xl font-semibold text-center my-2 text-red-400">ACCOUNTANT</p>
+                </div><br><br>
+            </div>
+        </section>
+    </main>
+
+    <section class="container">
+        <div class="w-[90%] gap-2  ms-auto grid md:grid-cols-12">
+          <div class="col-span-6 grid grid-cols-6 p-2 ">
+            <div class="col-span-3 p-2 ">
+              <i class="ri-plane-line text-2xl p-2 cursor-pointer hover:text-red-500"><small class="font-mont"> Free<br>Delivery</small></i>
+            </div>
+            <div class="col-span-3 ">
+              <div class="col-span-3 p-2 ">
+                <i class="ri-discount-percent-fill text-2xl p-2 cursor-pointer hover:text-red-500"><small class="font-mont"> Client<br> Discount</small></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-6 grid grid-cols-6 p-2">
+            <div class="col-span-3 p-2">
+              <i class="ri-refund-2-fill text-2xl p-2 cursor-pointer hover:text-red-500 duration-150"><small class="font-mont"> Return<br> Of Goods</small></i>
+            </div>
+            <div class="col-span-3 ">
+              <div class="col-span-3 p-2">
+                <i class="ri-global-fill text-2xl ms-auto p-2 cursor-pointer hover:text-red-500 duration-150"><small class="font-mont"> Many<br> Brands</small></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class=" bg-primaryColor p-2">
+        <!-- links -->
+        <div class="md:w-[70%]  mx-auto items-center grid grid-cols-6 justify-between">
+          <div class="col-span-full md:col-span-1">
+            <img src="./img/Zshoe__2_-removebg-preview.png" class="h-28 mx-auto my-2 " alt="">
+          </div>
+          <div class="hidden md:col-span-3 lg:col-span-4 md:block">
+    
+          </div>
+          <div class="col-span-full md:col-span-2 lg:col-span-1 md:ms-auto text-2xl text-center">
+            <i class="ri-twitter-x-line mx-1 hover:text-red-400 duration-200"></i>
+            <i class="ri-facebook-fill mx-1 hover:text-red-400 duration-200"></i>
+            <i class="ri-google-fill mx-1 hover:text-red-400 duration-200"></i>
+            <i class="ri-github-fill mx-1 hover:text-red-400 duration-200"></i>
+          </div>
+        </div><br>
+        <hr class="text-2xl">
+        <div>
+          <div class="w-[80%] mx-auto m-4 grid grid-cols-12 gap-3">
+            <div class="col-span-full md:col-span-3">
+              <p class="uppercase font-bold text-red-400">contact us</p><br>
+              <p><i class="ri-home-4-fill text-xl mx-1"></i>
+                NO 3, ADEYINKA STREET, OYERO, IFO, OGUN STATE, NIGERIA.
+              </p><br>
+              <p>
+                <i class="ri-phone-fill"></i> +234-90-272-202-88
+              </p><br>
+              <p class="hover:text-red-400 duration-200 cursor-pointer">
+                <i class="ri-mail-fill"></i> Olayinkaadeyinka25@gmail.com
+              </p>
+    
+            </div>
+            <div class="col-span-full md:col-span-3">
+              <p class="uppercase font-bold text-red-400">info</p><br>
+    
+              
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Search Terms
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Advance Search
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Orders Returns
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Consultant
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Helps & FAQs
+              </p>
+            </div>
+            <div class="col-span-full md:col-span-3">
+              <p class="uppercase font-bold text-red-400">help</p>
+              <br>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> About
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Contact
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Privacy Policy
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Best Sellers
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Support
+              </p>
+            </div>
+            <div class="col-span-full md:col-span-3">
+              <p class="uppercase font-bold text-red-400">support</p><br>
+    
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Search Terms
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Advance Search
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Orders Returns
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Consultant
+              </p>
+              <p class="hover:text-red-400 duration-200 cursor-pointer my-3">
+                <i class="ri-arrow-right-s-line"></i> Helps & FAQs
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="p-6 text-center bg-red-800">
+        <p class="text-xl font-mont">&copy; zShoe Stores</p>
+      </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
